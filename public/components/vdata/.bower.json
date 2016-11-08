@@ -1,0 +1,46 @@
+{
+  "name": "vdata",
+  "homepage": "http://vdata.dekuan.org/",
+  "authors": [
+    "liuqixing <liuqixing@dekuan.org>"
+  ],
+  "description": "JavaScript client of vdata protocol. vdata protocol is the best protocol for calling or responding a HTTP/HTTPS service.",
+  "main": [
+    "vdata.js"
+  ],
+  "keywords": [
+    "dekuan",
+    "vdata",
+    "rcp",
+    "http",
+    "services",
+    "library"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "composer.json",
+    "karma.conf.js",
+    "mocha.opts",
+    "package.json",
+    "dist/js/independent/vdata.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.11"
+  },
+  "version": "1.0.15",
+  "_release": "1.0.15",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.15",
+    "commit": "3efc848e29df05c523a2aa176062b365b0f46c57"
+  },
+  "_source": "https://github.com/dekuan/vdata.git",
+  "_target": ">=1.0",
+  "_originalSource": "vdata"
+}

@@ -1,0 +1,17 @@
+{
+	"name"		: "vdata official website",
+	"description"	: "Awesome official website by DeKuan, Inc",
+	"version"	: "0.0.0",
+	"homepage"	: "http://vdata.dekuan.org/",
+	"license"	: "MIT",
+	"private"	: true,
+	"dependencies"	:
+	{
+		"angular"	: "1.5.x",
+		"bootstrap"	: "3.3.x",
+		"html5shiv"	: "3.7.x",
+		"respond"	: "1.4.x",
+		"jquery"	: "1.11.x",
+		"vdata"		: ">=1.0"
+	}
+}
