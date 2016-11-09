@@ -7,9 +7,7 @@ use Illuminate\Support\Facades\Input;
 
 use App\Http\Models;
 
-use dekuan\vdata\CConst;
-use dekuan\vdata\CResponse;
-
+use App\Helper;
 
 
 class ApiController_V1_1 extends ApiController_V1_0
@@ -30,26 +28,15 @@ class ApiController_V1_1 extends ApiController_V1_0
 		return self::$g_cStaticInstance;
 	}
 
-	public function VData()
+	public function GetInfo()
 	{
-		$cResponse	= new CResponse();
 		$cApiData	= new Models\CApiData();
 
 		//
 		//	...
 		//
-		$cResponse->SetCorsDomains
-		([
-			'localhost',
-			'.ladep.cn',
-			'.dekuan.org'
-		]);
-		$cResponse->Send
-		(
-			CConst::ERROR_SUCCESS,
-			"",
-			$cApiData->GetVData( Input::get() ),
-			$this->m_sServiceVersion
-		);
+		$arrData	= [];
+		$nCall		= $cApiData->GetInfo( Input::get(), $arrData );
+		return Helper::ResponseVData( $nCall, "", $arrData, $this->m_sServiceVersion );
 	}
 }

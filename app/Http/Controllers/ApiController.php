@@ -12,12 +12,11 @@ use App\Http\Controllers\ApiController;
 use dekuan\delib\CLib;
 
 
-
 class ApiController extends Controller
 {
 	public function VData()
 	{
-		return $this->_GetInstanceByVersion()->VData();
+		return $this->_GetInstanceByVersion()->GetInfo();
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
